@@ -24,9 +24,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
+              "src/styles.css",
+              "../website/node_modules/materialize-css/dist/css/materialize.css",
+              "../website/node_modules/font-awesome/css/font-awesome.css"
+            ]
           },
           "configurations": {
             "production": {
@@ -89,9 +90,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "../website/node_modules/materialize-css/dist/css/materialize.css",
+              "../website/node_modules/font-awesome/css/font-awesome.css"
             ],
-            "scripts": []
+            "scripts": [
+              "../website/node_modules/jquery/dist/jquery.min.js",
+              "../website/node_modules/materialize-css/dist/js/materialize.min.js"
+            ]
           }
         },
         "lint": {

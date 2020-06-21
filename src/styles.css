@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+
+[appFadeIn] {
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: all 1s;
+}
+
+[appFadeIn].visible {
+    opacity: 1;
+    transform: translate(0, 0);
+}

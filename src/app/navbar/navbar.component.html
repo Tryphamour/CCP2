@@ -1,0 +1,58 @@
+<!--NAVBAR DESKTOP-->
+<nav>
+  <div class="nav-wrapper">
+    <div class="hide-on-med-and-down"><a href="index.html" class="brand-logo"><img id="brandlogo"
+          src="./assets/images/webagency.png" height="50" width="157" alt=""></a></div>
+    <div class="hide-on-extra-large-only hide-on-large-only"><a href="index.html" class="brand-logo"><img
+          id="brandlogomobile" src="./assets/images/wa.png" height="50" width="50" alt=""></a></div>
+    <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+      <fa-icon [icon]="bars" size="2x"></fa-icon>
+    </a>
+    <ul class="right hide-on-med-and-down">
+      <li><a>
+          <fa-icon [icon]="search" size="2x"></fa-icon>
+        </a>
+      <li><a routerLink="home">Accueil</a></li>
+      <li><a href="">Création de site</a></li>
+      <li><a href="">Référencement</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">Forum</a></li>
+      <li><a routerLink="blog">Blog</a></li>
+      <li><a href="">Contact</a></li>
+      <li *ngIf="showAdminBoard">
+        <a href="/admin" routerLink="admin">Admin Board</a>
+      </li>
+      <li *ngIf="showModeratorBoard">
+        <a href="/mod" routerLink="mod">Moderator Board</a>
+      </li>
+      <li>
+        <a href="/user" *ngIf="isLoggedIn" routerLin k="user">User</a>
+      </li>
+      <li *ngIf="!isLoggedIn">
+        <a href="/register" routerLink="register">Sign Up</a>
+      </li>
+      <li>
+        <a href="/login" routerLink="login">Login</a>
+      </li>
+      <li *ngIf="isLoggedIn">
+        <a href="/profile" routerLink="profile">{{ username }}</a>
+      </li>
+      <li>
+        <a href (click)="logout()">LogOut</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+<!--NAVBAR MOBILE-->
+<ul class="sidenav" id="mobile-demo" appSidenav>
+  <li><a href="index.html">Accueil</a></li>
+  <li><a href="">Création de site</a></li>
+  <li><a href="">Référencement</a></li>
+  <li><a href="">Portfolio</a></li>
+  <li><a href="">Forum</a></li>
+  <li><a href="">Blog</a></li>
+  <li><a href="">Contact</a></li>
+  <li><a href="">Connexion</a></li>
+</ul>

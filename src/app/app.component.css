@@ -1,0 +1,6 @@
+div.root {
+  background-color: #007EA7;
+  background-image: url(../assets/images/background.jpg);
+  background-repeat: repeat;
+  min-width: 100vh;
+}

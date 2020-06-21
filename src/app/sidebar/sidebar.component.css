@@ -1,0 +1,41 @@
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #00B6F1;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+div.icon-bar img,
+div.icon-bar a {
+  max-width: 30px;
+  max-height: 30px;
+}

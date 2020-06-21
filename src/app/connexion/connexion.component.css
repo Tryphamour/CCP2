@@ -1,0 +1,47 @@
+#profile-img {
+  height: 100px;
+  width: 100px;
+}
+
+a.waves-effect.waves-light.btn {
+  background-color: #FF6155;
+  color: white;
+}
+
+div.card-panel.z-depth-2 {
+  border: solid black 1px;
+  background-color: #2BBBADf0;
+  text-shadow: #000000 2px 0 2px;
+  box-shadow: #007EA7e0 1px 1px;
+  border-radius: 5px 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+div.container a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: underline;
+}
+
+div.form.row.card-panel.z-depth-2 {
+  margin-top: 50px;
+  margin-bottom: 55px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  background-color: #FF6155;
+}
+
+label {
+  color: white;
+  font-size: 1.2rem;
+  margin-right: 25px;
+}
+
+input.form-control {
+  background: white;
+  width: 30rem;
+}
